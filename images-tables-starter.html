@@ -67,11 +67,11 @@
                 <p>There are a couple of reasons for adding images to your HTML. One reason is that you would like to add an image for decoration. This means that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. The other reason is because you have images that are necessary content, and if you remove them from the page the user would be lost or missing needed information.</p>
 
                 <p>Images have two required attributes: <code>src</code>, which tells the browser where the image is and should use a relative link, and <code>alt</code>, which uses text to describe the image so that you could imagine what it looks like if you can't see it. Remember that if your image has any text in it, you have to include that in the alt text. It is also important to add the <code>height</code> and <code>width</code> attributes, as it improves the way your page looks as it loads. Ensure that those attributes are taken from the image, after editing and saving it at the correct size. Not respecting the aspect ratio will make your images look distorted on the screen.</p>
-
+                
                 <section>
                     <h3><span>&#10033;&nbsp;</span> Adding Decorative Images to HTML</h3>
                     <p>As explained above, a decorative images is one that if you took it off the page, the user would still be able to use and understand the page fully, because the image isn't adding any information they won't have otherwise. When adding these in your HTML, you indicate that they are decorative by leaving the alt text attribute empty. You can't leave the alt attribute off completely, just blank. Generally though, you'll add decorative images using CSS.</p>
-
+                    <img scr="images/square-red-blue.jpg" alt="" height="400px" width="400px">
                     <!-- TO DO: add the image named square-red-blue to this section below. Be sure to add its height and width -->
 
                     <p class="credit">Photo by <a href="https://unsplash.com/@usgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
@@ -82,7 +82,7 @@
                     <p>For images that are content, and necessary for understanding the page (think products, maps, etc.) you cannot leave the alt text blank, and should use it to describe the image to the best of your ability. These should also use width and height attributes that come from the edited image itself.</p>
 
                     <!-- TO DO: add the memphis recording service to this section below, I used "a neon sign hanging on a dark wall that says memphis recording service" as the alt text for this image it is 400px wide by 400px tall -->
-
+                    <img scr="images/memphis-recording-service.jpg" alt ="memphis recording service neon sign with memphis and service in red and recording in blue" height="400px" width="400px">
                     <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
                 </section>
             </section>
@@ -96,7 +96,7 @@
                     <p>The video that we will embed below is included in the video folder of this project. Your zyBook explains how these tags work in detail, but today we'll write some minimum code to get the video to display on our page. Below, we'll add the video from the video folder in the project. Include the attribute that will display controls for the video, and set the width.</p>
                     
                     <!-- TO DO: Add the video from the files below using HTML5 -->
-
+                    <video src="video/video.mp4">If you don't see the video, your browser old, or loading</video>
                     <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
                 </section>
 
@@ -147,6 +147,7 @@
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell that will span all columns -->
                         <!-- Wednesday - <span class="bold">Closed</span> -->
+                        <td colspan="2">Wednesday <span class="bold">closed</span></td>
                     </tr>
 
                     <tr>
@@ -167,6 +168,7 @@
 
                     <tr>
                         <!-- TO DO: Complete the code below to create a cell containing that text -->
+                        <td>Sunday</td>
                         <!-- Sunday -->
                     </tr>
                 </table>
@@ -181,6 +183,13 @@
                 <a href="#" aria-label="find us on facebook">
                     <!-- TO DO: go to the tabler icons site, search for the icon for Facebook, and copy and paste the SVG code below -->
                 </a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                    <path d="M16 21h3c.81 0 1.48 -.67 1.48 -1.48l.02 -.02c0 -.82 -.69 -1.5 -1.5 -1.5h-3v3z"></path>
+                    <path d="M16 15h2.5c.84 -.01 1.5 .66 1.5 1.5s-.66 1.5 -1.5 1.5h-2.5v-3z"></path>
+                    <path d="M4 9v-4c0 -1.036 .895 -2 2 -2s2 .964 2 2v4"></path>
+                    <path d="M2.99 11.98a9 9 0 0 0 9 9m9 -9a9 9 0 0 0 -9 -9"></path>
+                    <path d="M8 7h-4"></path>
+                  </svg>
                 
                 <a href="#" aria-label="find us on instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
